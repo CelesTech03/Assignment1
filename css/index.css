@@ -1,0 +1,28 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #CEC2EB;
+  text-align: center;
+}
+
+img {
+  height: 450px;
+  width: 100%;
+}
+
+.column {
+  float: left;
+  width: 48%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
